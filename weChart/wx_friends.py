@@ -108,7 +108,7 @@ def friends_signature():
 
     # simkai.ttf 必填项 识别中文的字体，例：simkai.ttf，
     my_wordcloud = WordCloud(background_color="white", max_words=800,
-                             mask=coloring, max_font_size=120, random_state=30, scale=2,font_path="fonts/STKAITI.TTF").generate(word_space_split)
+                             mask=coloring, max_font_size=120, random_state=30, scale=2,font_path="fonts/simkai.ttf").generate(word_space_split)
 
     image_colors = ImageColorGenerator(coloring)
     plt.imshow(my_wordcloud.recolor(color_func=image_colors))
